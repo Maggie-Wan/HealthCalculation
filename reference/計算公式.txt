@@ -10,7 +10,28 @@ TDEE計算公式（每日總消耗熱量計算公式）
 勞力密集工作或是每天高強度訓練	BMR X 1.9
 
 BMI = 體重(公斤) / 身高2(公尺2)
+
+
+公式：以每公斤體重每小時大約需要 1 大卡熱量估計：
+
+男性＝ 1 × 時間﹙小時數﹚ × 體重﹙公斤數﹚
+
+女性＝ 1 × 時間﹙小時數﹚ × 體重﹙公斤數﹚x 0.9
+
+飲食生熱效應(Thermic Effect of Food，簡稱TEF)
+計算式為：BMR＋活動量╳10%。
+
 http://depart.femh.org.tw/dietary/3opd/bmi.htm
 https://toolbxs.com/zh-TW/calculator/bmr
 https://www.chimei.org.tw/main/clh_department/75600/download/05_1_2.pdf
 https://ifitness.tw/bmr-and-tdee/
+
+http://st-mary.org.tw/main/dmcenter/health/energy_balance.pdf
+
+https://www.womenshealthmag.com/tw/fitness/work-outs/g33307946/introduce-tdee-bmr/
+
+https://blog.xuite.net/hckuo1127/twblog/91541698
+
+http://www.wunan.com.tw/www2/download/MA04_3%E7%89%881%E5%88%B7_%E8%A9%A6%E9%96%B1_103.9.PDF
+
+泡澡消耗熱量
