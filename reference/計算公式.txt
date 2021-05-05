@@ -1,0 +1,16 @@
+基礎代謝率計算公式（BMR計算公式）
+男性	66 + （13.7 × 體重（kg） + 5 × 身高（公分） - 6.8 × 年齡）
+女性	65 + （9.6 × 體重（kg） + 1.8 × 身高（公分） - 4.7 × 年齡）
+TDEE計算公式（每日總消耗熱量計算公式）
+活動量敘述	TDEE計算
+久坐、幾乎沒運動	BMR X 1.2
+每週低強度運動1~3天	BMR X 1.375
+每週中強度運動3~5天	BMR X 1.55
+每週高強度運動6~7天	BMR X 1.725
+勞力密集工作或是每天高強度訓練	BMR X 1.9
+
+BMI = 體重(公斤) / 身高2(公尺2)
+http://depart.femh.org.tw/dietary/3opd/bmi.htm
+https://toolbxs.com/zh-TW/calculator/bmr
+https://www.chimei.org.tw/main/clh_department/75600/download/05_1_2.pdf
+https://ifitness.tw/bmr-and-tdee/
