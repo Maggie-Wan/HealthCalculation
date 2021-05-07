@@ -102,6 +102,13 @@
                                     預計每周減少之體重是必要欄位
                                 </div>
                             </div>
+                            <div class="col-sm-3">
+                                <label for="preferredWeight" class="form-label">理想之體重(kg)</label>
+                                <input type="text" class="form-control" id="preferredWeight" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    理想之體重是必要欄位
+                                </div>
+                            </div>
                             <div class="col-sm-6">
                                 <label for="StandardTxt" class="form-label">標準體重範圍</label>
                                 <input type="text" class="form-control" id="StandardTxt" disabled>
@@ -111,10 +118,21 @@
                                 <input type="text" class="form-control" id="BMITxt" disabled>
                             </div>
 
-                            <div class="col-sm-6">
+                            <div class="col-sm-4">
                                 <label for="BEETxt" class="form-label">BEE 基礎能量消耗</label>
                                 <input type="text" class="form-control" id="BEETxt" disabled>
                             </div>
+
+                            <div class="col-sm-4">
+                                <label for="REETxt1" class="form-label">REE 靜態能量消耗(一) (*BEE X1.2計算)</label>
+                                <input type="text" class="form-control" id="REETxt1" disabled>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="REETxt2" class="form-label">REE 靜態能量消耗(二) (*公式計算)</label>
+                                <input type="text" class="form-control" id="REETxt2" disabled>
+                            </div>
+
 
                             <div class="col-sm-6">
                                 <label for="BMRTxt" class="form-label">BMR 基礎代謝率</label>
@@ -122,13 +140,8 @@
                             </div>
 
                             <div class="col-sm-6">
-                                <label for="REETxt1" class="form-label">REE 靜態能量消耗(一) (*使用BEE X1.2計算)</label>
-                                <input type="text" class="form-control" id="REETxt1" disabled>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <label for="REETxt2" class="form-label">REE 靜態能量消耗(二) (*使用公式計算)</label>
-                                <input type="text" class="form-control" id="REETxt2" disabled>
+                                <label for="TEFTxt" class="form-label">TEF 攝食產熱效應</label>
+                                <input type="text" class="form-control" id="TEFTxt" disabled>
                             </div>
 
                             <div class="col-sm-6">
@@ -280,6 +293,7 @@
             var SleepTime= parseFloat(document.getElementById('sleepTime').value);
             var DayCal= parseInt(document.getElementById('dayCal').value,10);
             var LoseWeight= parseFloat(document.getElementById('loseWeight').value);
+            var PreferredWeight=parseFloat(document.getElementById('preferredWeight').value);
             var Standard, BMI, BEE, REE2, TEDD;
             
             BMI = Weight / Math.pow((Height / 100), 2);
@@ -301,6 +315,12 @@
             document.getElementById('BEETxt').value = Math.round(BEE * 10) / 10;
             document.getElementById('REETxt1').value = (Math.round(BEE * 10) / 10) * 1.2;
             document.getElementById('REETxt2').value = REE2;
+            document.getElementById('TEFTxt').value = DayCal * 0.1;
+
+            SleepTime = Math.round(SleepTime * 10) / 10;
+            BMR=Weight * (24 - SleepTime) + Weight * SleepTime;
+            document.getElementById('BMRTxt').value = REE2;
+
             TEDD = Math.round(BEE * ActivityRatio * 10) / 10;
             document.getElementById('TEDDTxt').value = TEDD;
         };
